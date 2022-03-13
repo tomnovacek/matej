@@ -3,12 +3,17 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import FullWidthImage from "../components/FullWidthImage";
+import { getImage } from "gatsby-plugin-image";
 
 // eslint-disable-next-line
-export const PricingPageTemplate = ({ title, content, contentComponent }) => {
+export const PricingPageTemplate = ({ image, title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
+  const heroImage = getImage(image) || image;
 
   return (
+    <div>
+    <FullWidthImage img={heroImage} title={title} />
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
@@ -23,10 +28,12 @@ export const PricingPageTemplate = ({ title, content, contentComponent }) => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
 PricingPageTemplate.propTypes = {
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
@@ -38,6 +45,7 @@ const PricingPage = ({ data }) => {
   return (
     <Layout>
       <PricingPageTemplate
+        image={post.frontmatter.image}
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -55,10 +63,15 @@ export default PricingPage;
 export const pricingPageQuery = graphql`
   query PricingPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
       }
+      html
     }
   }
 `;

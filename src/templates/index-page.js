@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
-
 import Layout from "../components/Layout";
 /* import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll"; */
@@ -36,9 +35,9 @@ export const IndexPageTemplate = ({
 {/*                     <div className="tile">
                       <h1 className="title">{mainpitch.title}</h1>
                     </div> */}
-                    <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div>
+                    {/* <div className="tile"> */}
+                      <h3 className="subtitle has-text-centered">{mainpitch.description}</h3>
+                    {/* </div> */}
                   </div>
                   <div className="columns">
                     <div className="column is-12">
@@ -65,7 +64,7 @@ export const IndexPageTemplate = ({
                     </h3>
                     <BlogRoll /> */}
                     <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/about">
+                      <Link className="btn" to="/omne">
                         Více o mne
                       </Link>
                     </div>

@@ -9526,6 +9526,11 @@ module.exports = [{
     "plugins": [],
     "modulePath": "/Users/tomnovacek/Repos/matej/src/cms/cms.js"
   }
+}, {
+  plugin: __webpack_require__(/*! ../gatsby-browser.js */ "./gatsby-browser.js"),
+  options: {
+    "plugins": []
+  }
 }];
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.id);
@@ -12609,6 +12614,98 @@ function stripPrefix(str, prefix) {
 
   return str;
 }
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.id);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.id].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+
+/***/ }),
+
+/***/ "./gatsby-browser.js":
+/*!***************************!*\
+  !*** ./gatsby-browser.js ***!
+  \***************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _fontsource_exo_2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fontsource/exo-2 */ "./node_modules/@fontsource/exo-2/index.css");
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ./node_modules/gatsby/dist/utils/fast-refresh-module.js */ "./node_modules/gatsby/dist/utils/fast-refresh-module.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.id);
+
+
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.id);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
@@ -17222,10 +17319,10 @@ var _jsxFileName = "/Users/tomnovacek/Repos/matej/src/templates/about-page.js",
  // eslint-disable-next-line
 
 var AboutPageTemplate = function AboutPageTemplate(_ref) {
-  var title = _ref.title,
+  var image = _ref.image,
+      title = _ref.title,
       content = _ref.content,
-      contentComponent = _ref.contentComponent,
-      image = _ref.image;
+      contentComponent = _ref.contentComponent;
   var PageContent = contentComponent || _components_Content__WEBPACK_IMPORTED_MODULE_2__["default"];
   var heroImage = (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.d)(image) || image;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17284,15 +17381,7 @@ var AboutPageTemplate = function AboutPageTemplate(_ref) {
       lineNumber: 21,
       columnNumber: 15
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "title is-size-3 has-text-weight-bold is-bold-light",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 17
-    }
-  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "columns",
     __self: _this,
     __source: {
@@ -17311,14 +17400,17 @@ var AboutPageTemplate = function AboutPageTemplate(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: "/img/matej.jpeg",
     alt: "Matej Borovsky",
+    style: {
+      borderRadus: "5%!important"
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27,
-      columnNumber: 29
+      columnNumber: 30
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "column",
+    className: "column is-offset-1",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -17353,10 +17445,10 @@ var AboutPageTemplate = function AboutPageTemplate(_ref) {
 };
 _c = AboutPageTemplate;
 AboutPageTemplate.propTypes = {
+  image: prop_types__WEBPACK_IMPORTED_MODULE_5___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_5___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string)]),
   title: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string.isRequired),
   content: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string),
-  contentComponent: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().func),
-  image: prop_types__WEBPACK_IMPORTED_MODULE_5___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_5___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string)])
+  contentComponent: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().func)
 };
 
 var AboutPage = function AboutPage(_ref2) {
@@ -17370,10 +17462,10 @@ var AboutPage = function AboutPage(_ref2) {
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(AboutPageTemplate, {
+    image: post.frontmatter.image,
     contentComponent: _components_Content__WEBPACK_IMPORTED_MODULE_2__.HTMLContent,
     title: post.frontmatter.title,
     content: post.html,
-    image: post.frontmatter.image,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -17382,13 +17474,21 @@ var AboutPage = function AboutPage(_ref2) {
     }
   }));
 };
+/* AboutPage.propTypes = {
+   data: PropTypes.object,
+}; */
+
 
 _c2 = AboutPage;
 AboutPage.propTypes = {
-  data: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().object.isRequired)
+  data: prop_types__WEBPACK_IMPORTED_MODULE_5___default().shape({
+    markdownRemark: prop_types__WEBPACK_IMPORTED_MODULE_5___default().shape({
+      frontmatter: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().object)
+    })
+  })
 };
 /* harmony default export */ __webpack_exports__["default"] = (AboutPage);
-var aboutPageQuery = "231726318";
+var aboutPageQuery = "1608568301";
 
 var _c, _c2;
 
@@ -17817,7 +17917,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 26,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FullWidthImage__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -17827,7 +17927,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 27,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
@@ -17835,7 +17935,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 28,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17843,7 +17943,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 29,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17851,7 +17951,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 30,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17859,7 +17959,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 31,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17867,7 +17967,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 32,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17875,7 +17975,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 33,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17883,31 +17983,23 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 34,
       columnNumber: 19
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "tile",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "subtitle has-text-centered",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39,
-      columnNumber: 21
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "subtitle",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
       columnNumber: 23
     }
-  }, mainpitch.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, mainpitch.description)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "columns",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 42,
       columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17915,35 +18007,35 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 43,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 47,
       columnNumber: 23
     }
   }, description1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 48,
       columnNumber: 23
     }
   }, description2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 49,
       columnNumber: 23
     }
   }, description3), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 50,
       columnNumber: 23
     }
   }, description4))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17951,7 +18043,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 61,
       columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17959,16 +18051,16 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 66,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     className: "btn",
-    to: "/about",
+    to: "/omne",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 67,
       columnNumber: 23
     }
   }, "V\xEDce o mne"))))))))));
@@ -17998,7 +18090,7 @@ var IndexPage = function IndexPage(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102,
+      lineNumber: 101,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(IndexPageTemplate, {
@@ -18017,7 +18109,7 @@ var IndexPage = function IndexPage(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103,
+      lineNumber: 102,
       columnNumber: 7
     }
   }));
@@ -50075,7 +50167,27 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1647021230711
+      // 1647172379579
+      var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
+      module.hot.dispose(cssReload);
+      module.hot.accept(undefined, cssReload);
+    }
+  
+
+/***/ }),
+
+/***/ "./node_modules/@fontsource/exo-2/index.css":
+/*!**************************************************!*\
+  !*** ./node_modules/@fontsource/exo-2/index.css ***!
+  \**************************************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+    if(true) {
+      // 1647172379750
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -76816,7 +76928,7 @@ module.exports = [];
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "c5dddd8bffa2680e75f1"; }
+/******/ 		__webpack_require__.h = function() { return "266d5e8871678bcd01b5"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
