@@ -24,7 +24,7 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent, }) 
                 </h2> */}
                     <div className="columns">
                         <div className="column is-one-third">
-                           { <img src="/img/matej.jpeg" alt="Matej Borovsky" style={{borderRadus:"5%!important"}}/>}
+                           { <img src="/img/matej.jpeg" alt="Matej Borovsky" style={{borderRadius: "3%"}}/>}
                         </div>
                         <div className="column is-offset-1">
                             <p>Som psychológ a frekventant <a href="http://www.https//www.psychoterapie-integrace.cz"> Výcviku integrace v psychoterapii </a>. Psychológiu som vyštudoval v Brne na Masarykovej univerzite. V súčasnosti žijem v Nitre, kde mám aj svoje pracovisko. Okrem psychológie a terapie sa venujem svojej manželke, Bohu, hudbe a priateľom.</p>
@@ -33,7 +33,7 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent, }) 
                 <PageContent className="content" content={content} />
               </div>
             </div>
-          </div>
+          </div> 
         </div>
       </section>
     </div>

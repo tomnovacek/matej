@@ -3,11 +3,12 @@ templateKey: index-page
 title: Mgr. Matej Borovský
 image: /img/smrk.jpeg
 heading: Mgr. Matej Borovský
-subheading: Psychológ a psychoterapeut vo výcviku
+subheading: Psychológ a psychoterapeut vo výcviku, Nitra
 mainpitch:
   # title: Why Kaldi
   description: >
-    Vítam Vás na mojej stránke. 
+    Vítam Vás na mojej stránke.
+    
 description1: >-
   Hľadáte zdroj podpory, riešite závažné témy v živote, nachádzate sa v situácii, ktorá je náročná, zaujíma Vás psychológia, terapia, osobnostný rozvoj alebo je to úplne iný podnet, ktorý Vás sem priviedol? 
 
@@ -15,7 +16,7 @@ description2: >-
   Nech už je podnet akýkoľvek, otázkou ostáva, koho sa do tohto "problému" rozhodnete prizvať a zasvätiť. Kto by Vám v tom mohol byť nápomocný.
 
 description3: >-
-  A posledná otázka, či zrovna ja Vám môžem byť nápomocný. Či si viete predstaviť, že naše spoločné stretávania Vám môžu priniesť úžitok.
+  A posledná otázka, či zrovna ja Vám môžem byť nápomocný? Viete predstaviť, že naše spoločné stretávania Vám môžu priniesť úžitok?
 
 description4: >-
   Pokojne sa tu porozhliadnite, preskúmavajte čo potrebujete, hľadajte odpoveď. 

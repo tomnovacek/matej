@@ -15798,14 +15798,7 @@ var Footer = /*#__PURE__*/function (_React$Component) {
         lineNumber: 12,
         columnNumber: 86
       }
-    }), "I\u010CO: 54429153 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("br", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12,
-        columnNumber: 105
-      }
-    }), " Vsechna prava vyhradena."))));
+    }), "I\u010CO: 54429153"))));
   };
 
   return Footer;
@@ -17401,7 +17394,7 @@ var AboutPageTemplate = function AboutPageTemplate(_ref) {
     src: "/img/matej.jpeg",
     alt: "Matej Borovsky",
     style: {
-      borderRadus: "5%!important"
+      borderRadius: "3%"
     },
     __self: _this,
     __source: {
@@ -17987,7 +17980,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
       columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "subtitle has-text-centered",
+    className: "subtitle",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -18046,24 +18039,7 @@ var IndexPageTemplate = function IndexPageTemplate(_ref) {
       lineNumber: 61,
       columnNumber: 19
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "column is-12 has-text-centered",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 21
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    className: "btn",
-    to: "/omne",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 23
-    }
-  }, "V\xEDce o mne"))))))))));
+  }))))))));
 };
 _c = IndexPageTemplate;
 IndexPageTemplate.propTypes = {
@@ -18090,7 +18066,7 @@ var IndexPage = function IndexPage(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101,
+      lineNumber: 96,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(IndexPageTemplate, {
@@ -18109,7 +18085,7 @@ var IndexPage = function IndexPage(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102,
+      lineNumber: 97,
       columnNumber: 7
     }
   }));
@@ -50167,7 +50143,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1647172379579
+      // 1647208684735
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -50187,7 +50163,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1647172379750
+      // 1647208684914
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -76928,7 +76904,7 @@ module.exports = [];
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "266d5e8871678bcd01b5"; }
+/******/ 		__webpack_require__.h = function() { return "405fa06e8e3eb696b343"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

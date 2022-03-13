@@ -36,7 +36,7 @@ export const IndexPageTemplate = ({
                       <h1 className="title">{mainpitch.title}</h1>
                     </div> */}
                     {/* <div className="tile"> */}
-                      <h3 className="subtitle has-text-centered">{mainpitch.description}</h3>
+                      <h3 className="subtitle">{mainpitch.description}</h3>
                     {/* </div> */}
                   </div>
                   <div className="columns">
@@ -63,11 +63,6 @@ export const IndexPageTemplate = ({
                       Latest stories
                     </h3>
                     <BlogRoll /> */}
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/omne">
-                        Více o mne
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </div>
