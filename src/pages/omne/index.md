@@ -2,7 +2,7 @@
 templateKey: 'about-page'
 path: /omne
 title: O mne
-image: /img/smrk.jpeg
+image: /img/mara.jpeg
 ---
 
 ### Integratívna psychoterapia

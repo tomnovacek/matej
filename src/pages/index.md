@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Mgr. Matej Borovský
-image: /img/smrk.jpeg
+image: /img/les.jpeg
 heading: Mgr. Matej Borovský
 subheading: Psychológ a psychoterapeut vo výcviku, Nitra
 mainpitch:

@@ -2,7 +2,7 @@
 templateKey: 'pricing-page'
 path: /cennik
 title: Cenník
-image: /img/smrk.jpeg
+image: /img/obr4.jpg
 ---
 
 Svoje služby poskytujem na priamu platbu. 
