@@ -16,7 +16,7 @@ description2: >-
   Nech už je podnet akýkoľvek, otázkou ostáva, koho sa do tohto "problému" rozhodnete prizvať a zasvätiť. Kto by Vám v tom mohol byť nápomocný.
 
 description3: >-
-  A posledná otázka, či zrovna ja Vám môžem byť nápomocný? Viete predstaviť, že naše spoločné stretávania Vám môžu priniesť úžitok?
+  A posledná otázka, či zrovna ja Vám môžem byť nápomocný? Viete si predstaviť, že naše spoločné stretávania Vám môžu priniesť úžitok?
 
 description4: >-
   Pokojne sa tu porozhliadnite, preskúmavajte čo potrebujete, hľadajte odpoveď. 
