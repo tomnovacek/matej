@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+/* @import "~@fontsource/exo-2" */
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -19,6 +20,7 @@ a:link
 
 a:hover
   text-decoration: underline
+  color: $primary
 
 .navbar .navbar-menu
   box-shadow: none !important
@@ -132,19 +134,11 @@ $menu-label-color: $white-ter
   flex-basis: 35%
   margin: 0 1.5em 0 0
 
-dt
-  float: left
-  clear: left
-  margin-right: 5px
-  font-weight: bold
-  width: 65px
-
-dt::after
-  content: ": "
-
-dd
-  margin-left: 0px
-
+// address
+.no-bullets
+  list-style-type: none !important
+  padding: 0 !important
+  margin: 0 !important
 
 @import "~bulma"
 
