@@ -45,6 +45,7 @@
 }
 
 @charset "UTF-8";
+/* @import "~@fontsource/exo-2" */
 body {
   font-family: "Exo 2", "Lucida Grande", sans-serif;
 }
@@ -54,8 +55,8 @@ a:link {
 }
 
 a:hover {
-  color: #05A623;
   text-decoration: underline;
+  color: #057E23;
 }
 
 .navbar .navbar-menu {
@@ -181,20 +182,10 @@ footer.footer {
   margin: 0 1.5em 0 0;
 }
 
-dt {
-  float: left;
-  clear: left;
-  margin-right: 5px;
-  font-weight: bold;
-  width: 80px;
-}
-
-dt::after {
-  content: ": ";
-}
-
-dd {
-  margin-left: 0px;
+.no-bullets {
+  list-style-type: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */

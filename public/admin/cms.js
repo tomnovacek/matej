@@ -17418,14 +17418,15 @@ var AboutPageTemplate = function AboutPageTemplate(_ref) {
       columnNumber: 29
     }
   }, "Som psychol\xF3g a frekventant ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "http://www.https//www.psychoterapie-integrace.cz",
+    href: "https://www.psychoterapie-integrace.cz",
+    target: "_blank",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30,
       columnNumber: 60
     }
-  }, " V\xFDcviku integrace v psychoterapii "), ". Psychol\xF3giu som vy\u0161tudoval v Brne na Masarykovej univerzite. V s\xFA\u010Dasnosti \u017Eijem v Nitre, kde m\xE1m aj svoje pracovisko. Okrem psychol\xF3gie a terapie sa venujem svojej man\u017Eelke, Bohu, hudbe a priate\u013Eom."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PageContent, {
+  }, " V\xFDcviku integrace v psychoterapii"), ". Psychol\xF3giu som vy\u0161tudoval v Brne na Masarykovej univerzite. V s\xFA\u010Dasnosti \u017Eijem v Nitre, kde m\xE1m aj svoje pracovisko. Okrem psychol\xF3gie a terapie sa venujem svojej man\u017Eelke, Bohu, hudbe a priate\u013Eom."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PageContent, {
     className: "content",
     content: content,
     __self: _this,
@@ -50143,7 +50144,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1647366933566
+      // 1647528043776
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -50163,7 +50164,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1647366934086
+      // 1647527291302
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -76904,7 +76905,7 @@ module.exports = [];
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "47b5c0be749beb1d953d"; }
+/******/ 		__webpack_require__.h = function() { return "47d2d66b405605abce19"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
