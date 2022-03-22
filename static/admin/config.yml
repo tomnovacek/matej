@@ -272,7 +272,7 @@ collections:
               default: "contact-page",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Image", name: "image", widget: "string" }               
+          - { label: "Image", name: "image", widget: "image" }               
           - { label: "Meno", name: "name", widget: "string" }               
           - { label: "Adresa", name: "address", widget: "string" }               
           - { label: "Info", name: "info", widget: "string" }               
