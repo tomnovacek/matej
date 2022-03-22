@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
 /* import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll"; */
 import FullWidthImage from "../components/FullWidthImage";
@@ -11,60 +12,24 @@ import FullWidthImage from "../components/FullWidthImage";
 export const IndexPageTemplate = ({
   image,
   title,
-  /* heading, */
+  heading,
   subheading,
-  mainpitch,
-  description1,
-  description2,
-  description3,
-  description4,
+  content,
+  contentComponent,
   /* intro, */
 }) => {
+  const PageContent = contentComponent || Content;
   const heroImage = getImage(image) || image;
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      <FullWidthImage img={heroImage} title={heading} subheading={subheading} />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="content">
-{/*                     <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div> */}
-                    {/* <div className="tile"> */}
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    {/* </div> */}
-                  </div>
-                  <div className="columns">
-                    <div className="column is-12">
-{/*                       <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
-                      </h3> */}
-                      <p>{description1}</p>
-                      <p>{description2}</p>
-                      <p>{description3}</p>
-                      <p>{description4}</p>
-                    </div>
-                  </div>
-                 {/*  <Features gridItems={intro.blurbs} /> */}
-                  {/* <div className="columns">
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/products">
-                        See all products
-                      </Link>
-                    </div>
-                  </div> */}
-                  <div className="column is-12">
-                    {/* <h3 className="has-text-weight-semibold is-size-2">
-                      Latest stories
-                    </h3>
-                    <BlogRoll /> */}
-                  </div>
-                </div>
+                <PageContent className="content" content={content} />
               </div>
             </div>
           </div>
@@ -77,33 +42,27 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-/*   heading: PropTypes.string, */
+  heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description1: PropTypes.string,
-  description2: PropTypes.string,
-  description3: PropTypes.string,
-  description4: PropTypes.string,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
 /*   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }), */
 };
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        /* heading={frontmatter.heading} */
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description1={frontmatter.description1}
-        description2={frontmatter.description2}
-        description3={frontmatter.description3}
-        description4={frontmatter.description4}
+        image={post.frontmatter.image}
+        title={post.frontmatter.title}
+        contentComponent={HTMLContent}
+        heading={post.frontmatter.heading}
+        subheading={post.frontmatter.subheading}
+        content={post.html}
         /* intro={frontmatter.intro} */
       />
     </Layout>
@@ -132,14 +91,8 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
-          description
-        }
-        description1
-        description2
-        description3
-        description4
       }
+      html
     }
   }
 `;

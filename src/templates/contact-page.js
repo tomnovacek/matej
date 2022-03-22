@@ -11,7 +11,7 @@ import { faUser, faLocationDot, faCircleInfo, faPhone, faEnvelope } from '@forta
 
 
 // eslint-disable-next-line
-export const ContactPageTemplate = ({ image, title, content, contentComponent }) => {
+export const ContactPageTemplate = ({ image, title, name, address, info, phone, email, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   const heroImage = getImage(image) || image;
 
@@ -33,11 +33,11 @@ export const ContactPageTemplate = ({ image, title, content, contentComponent })
                       </div>
                       <div className="column">
                           <ul className="no-bullets">
-                              <li><FontAwesomeIcon icon={faUser}/> Mgr. Matej Borovský</li>
-                              <li><FontAwesomeIcon icon={faLocationDot}/> Fraňa Mojtu 1, Nitra, 949 01</li>
-                              <li><FontAwesomeIcon icon={faCircleInfo}/> Termíny sedení na základe dohody</li>
-                              <li><FontAwesomeIcon icon={faPhone}/> +421 914 175 148 </li>
-                              <li><FontAwesomeIcon icon={faEnvelope}/> psychologborovsky@gmail.com</li>
+                              <li><FontAwesomeIcon icon={faUser}/> {name}</li>
+                              <li><FontAwesomeIcon icon={faLocationDot}/> {address}</li>
+                              <li><FontAwesomeIcon icon={faCircleInfo}/> {info}</li>
+                              <li><FontAwesomeIcon icon={faPhone}/> {phone} </li>
+                              <li><FontAwesomeIcon icon={faEnvelope}/> {email}</li>
                           </ul>
                       </div>
                   </div>
@@ -55,6 +55,11 @@ export const ContactPageTemplate = ({ image, title, content, contentComponent })
 ContactPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  address: PropTypes.string,
+  info: PropTypes.string,
+  phone: PropTypes.string,
+  email: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
@@ -68,6 +73,11 @@ const ContactPage = ({ data }) => {
         image={post.frontmatter.image}
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        name={post.frontmatter.name}
+        address={post.frontmatter.address}
+        info={post.frontmatter.info}
+        phone={post.frontmatter.phone}
+        email={post.frontmatter.email}
         content={post.html}
       />
     </Layout>
@@ -89,6 +99,11 @@ export const contactPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        name
+        address
+        info
+        phone
+        email
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)

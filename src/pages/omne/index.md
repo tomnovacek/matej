@@ -3,8 +3,10 @@ templateKey: 'about-page'
 path: /omne
 title: O mne
 image: /img/mara.jpeg
+photo: /img/matej.jpeg
+introduction: Som psychológ a frekventant Výcviku integrace v psychoterapii. Psychológiu som vyštudoval v Brne na Masarykovej univerzite. V súčasnosti žijem v Nitre, kde mám aj svoje pracovisko. Okrem psychológie a terapie sa venujem svojej manželke, Bohu, hudbe a priateľom.
+link: https://www.psychoterapie-integrace.cz/
 ---
-
 <iframe src="https://www.youtube.com/embed/52HtWGnCHkQ" width="854" height="480" style="border:none; border-radius:1%;"></iframe>
 
 ### Integratívna psychoterapia

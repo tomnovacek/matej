@@ -4,12 +4,14 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import { getImage } from "gatsby-plugin-image";
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ image, title, content, contentComponent, }) => {
+export const AboutPageTemplate = ({ image, title, photo, introduction, link, content, contentComponent, }) => {
   const PageContent = contentComponent || Content;
   const heroImage = getImage(image) || image;
+  const matejImage = getImage(photo) || photo;
 
   return (
     <div> 
@@ -19,15 +21,15 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent, }) 
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-{/*                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                  {title}
-                </h2> */}
                     <div className="columns">
                         <div className="column is-one-third">
-                           { <img src="/img/matej.jpeg" alt="Matej Borovsky" style={{borderRadius: "3%"}}/>}
+                        <PreviewCompatibleImage imageInfo={photo}/> {/* TODO: photo or matejImage */}
+{/*                            { <img src={matejImage} alt="Matej Borovsky" style={{borderRadius: "3%"}}/>} */}
                         </div>
                         <div className="column is-offset-1">
-                            <p>Som psychológ a frekventant <a href="https://www.psychoterapie-integrace.cz" target="_blank" rel="noreferrer"> Výcviku integrace v psychoterapii</a>. Psychológiu som vyštudoval v Brne na Masarykovej univerzite. V súčasnosti žijem v Nitre, kde mám aj svoje pracovisko. Okrem psychológie a terapie sa venujem svojej manželke, Bohu, hudbe a priateľom.</p>
+                          <p>{introduction}</p>
+                          {/* <p>Viac o <a href={link} target="_blank" rel="noreferrer">výcviku integrace v psychoterapii</a>.</p> */}
+    {/*                         <p>Som psychológ a frekventant <a href="https://www.psychoterapie-integrace.cz" target="_blank" rel="noreferrer"> Výcviku integrace v psychoterapii</a>. Psychológiu som vyštudoval v Brne na Masarykovej univerzite. V súčasnosti žijem v Nitre, kde mám aj svoje pracovisko. Okrem psychológie a terapie sa venujem svojej manželke, Bohu, hudbe a priateľom.</p> */}
                         </div>
                     </div>
                 <PageContent className="content" content={content} />
@@ -43,6 +45,9 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent, }) 
 AboutPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string.isRequired,
+  photo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  introduction: PropTypes.string,
+  link: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
@@ -56,6 +61,9 @@ const AboutPage = ({ data }) => {
         image={post.frontmatter.image}
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        photo={post.frontmatter.photo}
+        introduction={post.frontmatter.introduction}
+        link={post.frontmatter.link}
         content={post.html}
       />
     </Layout>
@@ -80,13 +88,20 @@ export const aboutPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        introduction
+        link
+        photo {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED)
+          }
+        }
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
         }
-      }
-      html
+      } 
+      html 
     }
   }
 `;
