@@ -17420,6 +17420,7 @@ var AboutPageTemplate = function AboutPageTemplate(_ref) {
   }, "Som psychol\xF3g a frekventant ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "https://www.psychoterapie-integrace.cz",
     target: "_blank",
+    rel: "noreferrer",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -50144,7 +50145,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1647528043776
+      // 1647966764302
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -50164,7 +50165,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1647527291302
+      // 1647966764441
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -76905,7 +76906,7 @@ module.exports = [];
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "47d2d66b405605abce19"; }
+/******/ 		__webpack_require__.h = function() { return "e9e640275bdfcc80ab56"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

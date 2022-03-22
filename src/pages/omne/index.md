@@ -5,6 +5,8 @@ title: O mne
 image: /img/mara.jpeg
 ---
 
+<iframe src="https://www.youtube.com/embed/52HtWGnCHkQ" width="854" height="480" style="border:none; border-radius:1%;"></iframe>
+
 ### Integratívna psychoterapia
 Integratívna psychoterapia je prístup, ktorý kladie dôraz na unikátnosť potrieb a prejavov každého človeka ako klienta a svoje pôsobenie stavia na kompetenciách terapeuta a na účinných faktoroch, ktoré sú spoločné naprieč spektrom psychoterapeutických prístupov. 
 
