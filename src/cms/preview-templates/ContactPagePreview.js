@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { IndexPageTemplate } from '../../templates/contact-page'
+import { ContactPageTemplate } from '../../templates/contact-page'
 
-const IndexPagePreview = ({ entry, getAsset, widgetFor }) => {
+const ContactPagePreview = ({ entry, getAsset, widgetFor }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
     return (
-      <IndexPageTemplate
+      <ContactPageTemplate
         image={getAsset(data.image)}
         title={data.title}
         name={data.name}
@@ -31,4 +31,4 @@ IndexPagePreview.propTypes = {
   widgetFor: PropTypes.func,
 }
 
-export default IndexPagePreview
+export default ContactPagePreview
