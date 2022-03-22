@@ -23,7 +23,7 @@ const ContactPagePreview = ({ entry, getAsset, widgetFor }) => {
   }
 }
 
-IndexPagePreview.propTypes = {
+ContactPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),

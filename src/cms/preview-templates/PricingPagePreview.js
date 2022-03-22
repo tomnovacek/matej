@@ -10,7 +10,7 @@ const PricingPagePreview = ({ entry, widgetFor }) => (
   />
 )
 
-AboutPagePreview.propTypes = {
+PricingPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
