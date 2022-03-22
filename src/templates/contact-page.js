@@ -28,7 +28,7 @@ export const ContactPageTemplate = ({ image, title, content, contentComponent })
               </h2> */}
               <div className="container content">
                   <div className="columns">
-                      <div className="column  is-one-third">
+                      <div className="column">
                           <a href="https://www.google.com/maps/place/Fra%C5%88a+Mojtu+1,+949+01+Nitra,+Slovakia/@48.3119326,18.0890001,17z/data=!3m1!4b1!4m5!3m4!1s0x476b3ee0d61f50e3:0x20c50d66bb142a2!8m2!3d48.3119326!4d18.0911888" target="_blank" rel="noreferrer"><img src="/img/map.png" alt="Map" /></a>
                       </div>
                       <div className="column">
