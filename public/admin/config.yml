@@ -133,7 +133,7 @@ collections:
               default: "about-page",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Introduction", name: "introduction", widget: "string"}
+          - { label: "Introduction", name: "introduction", widget: "text"}
           - { label: "Image", name: "image", widget: "image" }         
           - { label: "Photo", name: "photo", widget: "image" }         
           - { label: "Body", name: "body", widget: "markdown" }
@@ -272,7 +272,7 @@ collections:
               default: "contact-page",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Image", name: "image", widget: "string" }               
+          - { label: "Image", name: "image", widget: "image" }               
           - { label: "Meno", name: "name", widget: "string" }               
           - { label: "Adresa", name: "address", widget: "string" }               
           - { label: "Info", name: "info", widget: "string" }               
