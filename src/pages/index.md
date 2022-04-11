@@ -7,10 +7,12 @@ subheading: Psychológ a psychoterapeut vo výcviku, Nitra
 ---
 ### Vítam Vás na mojej stránke.
 
-Hľadáte zdroj podpory, riešite závažné témy v živote, nachádzate sa v situácii, ktorá je náročná, zaujíma Vás psychológia, terapia, osobnostný rozvoj alebo je to úplne iný podnet, ktorý Vás sem priviedol? 
+Hľadáte zdroj psychologickej podpory, riešite závažné témy v živote, nachádzate sa v situácii, ktorá je náročná, zaujíma Vás psychológia, psychoterapia, osobnostný rozvoj alebo je to úplne iný podnet, ktorý Vás sem priviedol? 
 
-Nech už je podnet akýkoľvek, otázkou ostáva, koho sa do tohto "problému" rozhodnete prizvať a zasvätiť. Kto by Vám v tom mohol byť nápomocný.
+Nech už je podnet akýkoľvek, otázkou ostáva, koho sa do tohto "problému" rozhodnete prizvať a zasvätiť. Kto by Vám v tom mohol byť nápomocný. Psychoterapia má významný potenciál v sprevádzaní človeka na jeho ceste skrz náročné obdobia a situácie. \
+\
+Má však aj svoje hranice a obmedzenia, ktoré môžu vyplývať z povahy problému, z kompatibility medzi človekom terapeutom a človekom klientom. Dôležité je, aby pre Vás bolo prostredie psychoterapie bezpečným prostredím. 
 
-A posledná otázka, či zrovna ja Vám môžem byť nápomocný? Viete si predstaviť, že naše spoločné stretávania Vám môžu priniesť úžitok?
+A preto posledná otázka, či zrovna ja ako psychológ a terapeut Vám môžem byť nápomocný? Viete si predstaviť, že naše spoločné stretávania Vám môžu priniesť úžitok? Viete si predstaviť, že spolu vytvoríme prostredie, ktoré pre Vás bude bezpečné a podnetné? 
 
-Pokojne sa tu porozhliadnite, preskúmavajte čo potrebujete, hľadajte odpoveď.
+Dosť bolo otázok. Pokojne sa tu porozhliadnite, preskúmavajte čo potrebujete, hľadajte odpoveď.
