@@ -3,7 +3,7 @@ templateKey: index-page
 title: Mgr. Matej Borovský
 image: /img/les.jpeg
 heading: Mgr. Matej Borovský
-subheading: Psychológ a psychoterapeut vo výcviku, Nitra
+subheading: "Psychologické poradenstvo, terapia Nitra "
 ---
 ### Vítam Vás na mojej stránke.
 
