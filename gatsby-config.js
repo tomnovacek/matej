@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Matej Borovský - psychológ, Nitra",
+    title: "Matej Borovský - psychológ a terapeut, Nitra",
     description:
       "Hľadáte zdroj podpory, riešite závažné témy v živote, nachádzate sa v situácii, ktorá je náročná, zaujíma Vás psychológia, terapia, osobnostný rozvoj alebo je to úplne iný podnet, ktorý Vás sem priviedol?",
   },

@@ -23,13 +23,10 @@ export const AboutPageTemplate = ({ image, title, photo, introduction, link, con
               <div className="section">
                     <div className="columns">
                         <div className="column is-one-third">
-                        <PreviewCompatibleImage imageInfo={{image:photo, alt:"Mgr. Matej Borovsky, psycholog, psychoterapeut"}}/> {/* TODO: photo or matejImage */}
-{/*                            { <img src={matejImage} alt="Matej Borovsky" style={{borderRadius: "3%"}}/>} */}
+                        <PreviewCompatibleImage imageInfo={{image:photo, alt:"Mgr. Matej Borovsky, psychológ, terapeut, Nitra"}}/> {/* TODO: photo or matejImage */}
                         </div>
                         <div className="column is-offset-1">
                           <p>{introduction}</p>
-                          {/* <p>Viac o <a href={link} target="_blank" rel="noreferrer">výcviku integrace v psychoterapii</a>.</p> */}
-    {/*                         <p>Som psychológ a frekventant <a href="https://www.psychoterapie-integrace.cz" target="_blank" rel="noreferrer"> Výcviku integrace v psychoterapii</a>. Psychológiu som vyštudoval v Brne na Masarykovej univerzite. V súčasnosti žijem v Nitre, kde mám aj svoje pracovisko. Okrem psychológie a terapie sa venujem svojej manželke, Bohu, hudbe a priateľom.</p> */}
                         </div>
                     </div>
                 <PageContent className="content" content={content} />
