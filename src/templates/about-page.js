@@ -23,7 +23,7 @@ export const AboutPageTemplate = ({ image, title, photo, introduction, link, con
               <div className="section">
                     <div className="columns">
                         <div className="column is-one-third">
-                        <PreviewCompatibleImage imageInfo={photo}/> {/* TODO: photo or matejImage */}
+                        <PreviewCompatibleImage imageInfo={{image:photo, alt:"Mgr. Matej Borovsky, psycholog, psychoterapeut"}}/> {/* TODO: photo or matejImage */}
 {/*                            { <img src={matejImage} alt="Matej Borovsky" style={{borderRadius: "3%"}}/>} */}
                         </div>
                         <div className="column is-offset-1">

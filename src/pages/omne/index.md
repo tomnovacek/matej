@@ -7,7 +7,7 @@ introduction: Som psychológ a frekventant psychoterapeutického Výcviku integr
   V súčasnosti žijem v Nitre, kde mám aj svoje terapeutické pracovisko. Okrem
   psychológie a terapie sa venujem svojej manželke, Bohu, hudbe a priateľom.
 image: /img/mara.jpeg
-photo: /img/matej.jpeg
+photo: /img/mgr-matej-borovsky-psychoterapeut.jpeg
 link: https://www.psychoterapie-integrace.cz/
 ---
 <iframe src="https://www.youtube.com/embed/52HtWGnCHkQ" width="854" height="480" style="border:none; border-radius:1%;"></iframe>
