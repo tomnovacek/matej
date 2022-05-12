@@ -2,7 +2,7 @@
 path: /kontakt
 templateKey: contact-page
 title: Kontakt
-image: /img/les.jpeg
+image: /img/img_0591.jpg
 name: Mgr. Matej Borovský
 address: Fraňa Mojtu 1, Nitra, 949 01
 info: Termíny sedení na základe dohody
