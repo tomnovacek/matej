@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Mgr. Matej Borovský
-image: /img/les.jpeg
+image: /img/img_0568.jpg
 heading: Mgr. Matej Borovský
 subheading: "Psychologické poradenstvo, terapia Nitra "
 ---
