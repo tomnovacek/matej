@@ -2,7 +2,7 @@
 templateKey: pricing-page
 path: /cennik
 title: Cenník
-image: /img/obr4.jpg
+image: /img/img_0572.jpg
 ---
 Svoje služby poskytujem na priamu platbu, nakoľko nepôsobím v systéme zdravotníctva. 
 
