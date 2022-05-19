@@ -29,7 +29,7 @@ export const ContactPageTemplate = ({ image, title, name, address, info, phone, 
               <div className="container content">
                   <div className="columns">
                       <div className="column">
-                          <a href="https://www.google.com/maps/place/Fra%C5%88a+Mojtu+1,+949+01+Nitra,+Slovakia/@48.3119326,18.0890001,17z/data=!3m1!4b1!4m5!3m4!1s0x476b3ee0d61f50e3:0x20c50d66bb142a2!8m2!3d48.3119326!4d18.0911888" target="_blank" rel="noreferrer"><img src="/img/map.png" alt="Map" /></a>
+                          <a href="https://www.google.sk/maps/place/Mgr.+Matej+Borovsk%C3%BD/data=!4m6!3m5!1s0x476b3f40d183f2b3:0x58793205feba14fd!8m2!3d48.3119326!4d18.0911888!16s%2Fg%2F11rtsz34n_?authuser=0&hl=cs&rclk=1" target="_blank" rel="noreferrer"><img src="/img/map.png" alt="Map" /></a>
                       </div>
                       <div className="column">
                           <ul className="no-bullets">
