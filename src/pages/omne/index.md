@@ -4,8 +4,8 @@ path: /omne
 title: O mne
 introduction: Som psychológ a frekventant psychoterapeutického Výcviku integrace
   v psychoterapii. Psychológiu som vyštudoval v Brne na Masarykovej univerzite.
-  V súčasnosti žijem v Nitre, kde mám aj svoje terapeutické pracovisko. Okrem
-  psychológie a terapie sa venujem svojej manželke, Bohu, hudbe a priateľom.
+  V súčasnosti žijem v Nitre, kde mám aj svoje terapeutické pracovisko. Som
+  veriaci človek a hudobník.
 image: /img/img_0577.jpg
 photo: /img/mgr-matej-borovsky-psychoterapeut.jpeg
 link: https://www.psychoterapie-integrace.cz/
