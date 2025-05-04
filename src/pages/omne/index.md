@@ -26,8 +26,6 @@ Zo psychológa sa psychoterapeut stáva absolvovaním psychoterapeutického výc
 
 ### Supervízia
 
-
-
 Svoj prácu vykonávam pod pravidelnou supervíziou u kolegu supervízora. Dôvody popisujem nižšie. 
 
 Psychoterapia je profesia, ktorá je dynamická. Dopadá na psychoterapeuta tak, že ho neustále podnecuje meniť jednak spôsob jeho práce ale aj jeho osobnosť. Obe tieto oblasti, ako práca, tak osobnosť, sa nevyhnutne časom menia. Aby tieto zmeny boli pozitívne a aby táto profesia bola prospešná a užitočná pre klientov, je dôležité aby psychoterapeut reflektoval svoju prácu, resp. aby si uvedomoval, čo robí, prečo a ako to robí a tiež, čo to robí s ním.
@@ -44,12 +42,14 @@ Aj keď oblasti môjho pracovného pôsobenia sú odlišné, práve táto odliš
 
 V neposlednom rade ma tieto skúsenosti učili byť flexibilný v komunikácii, hľadať cesty ku vzájomnému porozumeniu a viesť rozhovor takým smerom, aby bol konštruktívny a pomáhal objavovať východiská z aktuálnych náročných situácií. 
 
-**2015 - 2017** Asistent ľudom s telesným a kombinovaným postihnutím, Praha 
+**2015 - 2017**   Asistent ľudom s telesným a kombinovaným postihnutím, Praha   
 
-**2016 - 2017** Streetwork pre rizikovú mládež, Praha 3 - Žižkov 
+**2016 - 2017**   Streetwork pre rizikovú mládež, Praha 3 - Žižkov  
 
-**2019 - 2021** Terapeut v doliečovacom centre pre alkoholikov, Brno 
+**2019 - 2021**   Terapeut v doliečovacom centre pre alkoholikov, Brno  
 
-od **2021**       Psychologická podpora pre dobrovoľníkov TvojBuddy
+**2021 - 2023**   Psychologická podpora pre dobrovoľníkov TvojBuddy
 
-od **2021**       Psychológ - Centrum Budúcnosť, n.o.
+**2021 - 2022**   Psychológ - Centrum Budúcnosť, n.o.
+
+od **2023**         Psychológ v ambulancii klinickej psychológie a psychoterapie Blumentál s.r.o.
